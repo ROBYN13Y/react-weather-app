@@ -1,12 +1,13 @@
-import logo from "./logo.svg";
-import "./App.css";
+import "./styles/App.css";
+
+import CitySearch from "./CitySearch";
+import CityWeatherInfo from "./CityWeatherInfo";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <h1>Hello!</h1>
-      </header>
+    <div className="container container-weather-app">
+      <CitySearch />
+      <CityWeatherInfo />
     </div>
   );
 }

@@ -1,0 +1,46 @@
+.title-emoji {
+  font-size: 31px;
+}
+
+#main-label {
+  font-size: 40px;
+  color: var(--pri-color);
+}
+
+.city-search-box {
+  border: 1px solid var(--sec-color);
+  background-color: var(--background-color);
+  color: var(--pri-color);
+  outline: none;
+  margin-top: 20px;
+}
+
+.city-search-box:active {
+  border: 2px solid var(--sec-color);
+}
+
+input::placeholder {
+  color: var(--tri-color);
+}
+
+#city-search-input {
+  padding: 8px;
+}
+
+.city-search-button {
+  background-color: var(--background-color);
+  color: var(--pri-color);
+  border: 1px solid var(--sec-color);
+  padding: 8px;
+  margin-left: 3px;
+  margin-top: 3px;
+}
+
+#current-location-button {
+  background-color: var(--background-color);
+  color: var(--pri-color);
+  border: 1px solid var(--sec-color);
+  padding: 8px;
+  margin-top: 3px;
+  margin-left: 3px;
+}

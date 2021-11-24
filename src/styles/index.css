@@ -1,0 +1,14 @@
+:root {
+  --pri-color: rgb(26, 95, 151);
+  --sec-color: rgb(35, 112, 212);
+  --tri-color: rgba(128, 128, 128, 0.685);
+  --background-color: rgba(163, 163, 230, 0.137);
+}
+
+body {
+  background-color: rgba(128, 128, 128, 0.322);
+  padding: 40px 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+}

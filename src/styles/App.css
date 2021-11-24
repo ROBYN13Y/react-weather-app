@@ -1,0 +1,11 @@
+.container-weather-app {
+  display: block;
+  margin: auto;
+  background-color: rgb(255, 255, 255);
+  font-family: sans-serif;
+  border: 2px solid rgb(6, 120, 214);
+  max-width: 680px;
+  min-width: 680px;
+  padding: 15px;
+  text-align: center;
+}

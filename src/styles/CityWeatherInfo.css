@@ -1,0 +1,72 @@
+.CurrentCity {
+  display: block;
+  margin: auto;
+  border: 1px solid var(--sec-color);
+  padding: 10px;
+  max-width: 60%;
+  margin-top: 20px;
+}
+
+.row {
+  display: flex;
+}
+
+#col-text {
+  width: 70%;
+  text-align: left;
+  padding-left: 8px;
+}
+
+#input-city-h2,
+#current-day-time-h5,
+#month-day-year-h6,
+#temp-description-h6,
+#wind-speed-h6,
+#city-temp-text {
+  color: var(--tri-color);
+  margin: 0;
+}
+
+#input-city-h2 {
+  margin-bottom: 7px;
+}
+
+#current-day-time-h5 {
+  font-size: 17px;
+  margin-bottom: 3px;
+}
+
+#month-day-year-h6 {
+  font-size: 13px;
+  margin-bottom: 9px;
+}
+
+#temp-description-h6 {
+  font-size: 15px;
+  margin-bottom: 3px;
+}
+
+#wind-speed-h6 {
+  font-size: 12px;
+}
+
+#today-weather-icon {
+  position: relative;
+  top: -10px;
+  left: 5px;
+}
+
+#c,
+#f {
+  color: var(--tri-color);
+  text-decoration: none;
+  font-size: 24px;
+  position: relative;
+  top: -10px;
+}
+
+#city-temp-text {
+  font-size: 35px;
+  position: relative;
+  top: -25px;
+}
