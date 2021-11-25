@@ -30,7 +30,7 @@ input::placeholder {
 .city-search-button {
   background-color: var(--background-color);
   color: var(--pri-color);
-  border: 1px solid var(--sec-color);
+  border: 2px solid var(--sec-color);
   padding: 8px;
   margin-left: 3px;
   margin-top: 3px;
@@ -39,7 +39,7 @@ input::placeholder {
 #current-location-button {
   background-color: var(--background-color);
   color: var(--pri-color);
-  border: 1px solid var(--sec-color);
+  border: 2px solid var(--sec-color);
   padding: 8px;
   margin-top: 3px;
   margin-left: 3px;
@@ -48,7 +48,7 @@ input::placeholder {
 .CurrentCity {
   display: block;
   margin: auto;
-  border: 1px solid rgba(35, 112, 212, 0.479);
+  border: 2px solid rgba(35, 112, 212, 0.479);
   padding: 15px;
   max-width: 60%;
   margin-top: 30px;
