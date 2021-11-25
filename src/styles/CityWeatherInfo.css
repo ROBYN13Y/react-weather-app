@@ -1,3 +1,6 @@
+/* CITY WEATHER INFO */
+
+/* BODY */
 .CurrentCity {
   display: block;
   margin: auto;
@@ -11,6 +14,7 @@
   display: flex;
 }
 
+/* TEXT COLUMN */
 #col-text {
   width: 70%;
   text-align: left;
@@ -28,31 +32,32 @@
 }
 
 #input-city-h2 {
-  margin-bottom: 7px;
+  padding-top: 8px;
+  margin-bottom: 15px;
 }
 
 #current-day-time-h5 {
   font-size: 17px;
-  margin-bottom: 3px;
+  margin-bottom: 8px;
 }
 
 #month-day-year-h6 {
   font-size: 13px;
-  margin-bottom: 9px;
+  margin-bottom: 15px;
 }
 
 #temp-description-h6 {
   font-size: 15px;
-  margin-bottom: 3px;
+  margin-bottom: 8px;
 }
 
 #wind-speed-h6 {
   font-size: 12px;
 }
 
+/* EMOJI COLUMN */
 #today-weather-icon {
   position: relative;
-  top: -10px;
   left: 5px;
 }
 
@@ -61,12 +66,22 @@
   color: var(--tri-color);
   text-decoration: none;
   font-size: 24px;
+}
+
+#c {
   position: relative;
-  top: -10px;
+  top: -19px;
+  left: 5px;
+}
+
+#f {
+  position: relative;
+  top: -19px;
+  left: 15px;
 }
 
 #city-temp-text {
-  font-size: 35px;
+  font-size: 45px;
   position: relative;
-  top: -25px;
+  top: -11px;
 }

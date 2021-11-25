@@ -1,3 +1,4 @@
+import React from "react";
 import "./styles/CityWeatherInfo.css";
 
 export default function CityWeatherInfo() {
