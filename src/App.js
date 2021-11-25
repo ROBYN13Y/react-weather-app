@@ -7,6 +7,9 @@ function App() {
   return (
     <div className="container container-weather-app">
       <CitySearch />
+      <footer>
+        <a href="#">Open-Sourced Code</a> | Robyn Young
+      </footer>
     </div>
   );
 }

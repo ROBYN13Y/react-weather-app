@@ -9,3 +9,17 @@
   padding: 15px;
   text-align: center;
 }
+
+footer {
+  margin-top: 40px;
+  color: var(--sec-color);
+}
+
+a {
+  text-decoration: none;
+  color: var(--pri-color);
+}
+
+a:hover {
+  color: var(--sec-color);
+}
