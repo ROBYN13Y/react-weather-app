@@ -8,7 +8,10 @@ function App() {
     <div className="container container-weather-app">
       <CitySearch />
       <footer>
-        <a href="#">Open-Sourced Code</a> | Robyn Young
+        <a href="https://github.com/ROBYN13Y/react-weather-app">
+          Open-Sourced Code
+        </a>{" "}
+        | Robyn Young
       </footer>
     </div>
   );
