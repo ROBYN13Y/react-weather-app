@@ -146,3 +146,7 @@ input:placeholder {
   top: -20px;
   left: 11px;
 }
+
+#today-weather-icon {
+  color: var(--pri-color);
+}
