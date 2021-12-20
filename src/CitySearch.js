@@ -18,12 +18,12 @@ export default function CitySearch() {
         <input
           type="text"
           className="city-search-box"
-          placeholder="TYPE CITY HERE!"
+          placeholder="TYPE CITY HERE"
           size="34"
           id="city-search-input"
           onChange={searchCity}
         />
-        <input type="submit" className="city-search-button" value="🔎" />
+        <input type="submit" className="city-search-button" value="🔍" />
         <input type="button" id="current-location-button" value="📍" />
       </form>
     </div>
@@ -74,10 +74,10 @@ export default function CitySearch() {
               />
               <h6 id="city-temp-text">
                 {weather.temp}
-                <a href="/" id="c">
+                <a href="#" id="c">
                   °C
                 </a>
-                <a href="/" id="f">
+                <a href="#" id="f">
                   °F
                 </a>
               </h6>
