@@ -12,7 +12,7 @@ export default function CitySearch() {
     <div className="CitySearch">
       <form id="city-search-form" onSubmit={citySubmit}>
         <label for="city-search-input" className="form-label" id="main-label">
-          <span className="title-emoji">🌈</span> What is the weather?
+          <span className="title-emoji">🌈</span> WHAT IS THE WEATHER?
         </label>
         <br />
         <input
@@ -74,12 +74,8 @@ export default function CitySearch() {
               />
               <h6 id="city-temp-text">
                 {weather.temp}
-                <a href="/" id="c">
-                  °C
-                </a>
-                <a href="/" id="f">
-                  °F
-                </a>
+                <button id="c">°C</button>
+                <button id="f">°F</button>
               </h6>
             </div>
           </div>
