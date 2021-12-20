@@ -23,12 +23,8 @@ export default function CitySearch() {
           id="city-search-input"
           onChange={searchCity}
         />
-        <input type="submit" className="city-search-button" value="SEARCH" />
-        <input
-          type="button"
-          id="current-location-button"
-          value="YOUR LOCATION"
-        />
+        <input type="submit" className="city-search-button" value="🔎" />
+        <input type="button" id="current-location-button" value="📍" />
       </form>
     </div>
   );
