@@ -3,46 +3,50 @@
 }
 
 #main-label {
+  display: block;
+  padding-left: 10px;
+  text-align: left;
   font-size: 40px;
   color: var(--pri-color);
 }
 
 .city-search-box {
-  border: 1px solid var(--sec-color);
+  margin-top: 30px;
+  border: 2px solid var(--sec-color);
   background-color: var(--background-color);
   color: var(--pri-color);
   outline: none;
-  margin-top: 20px;
+  margin-bottom: 15px;
 }
 
-.city-search-box {
-  border: 2px solid var(--sec-color);
+.city-search-box:active {
+  border: 3px solid var(--sec-color);
 }
 
-input::placeholder {
+input:placeholder {
   color: var(--tri-color);
+  text-align: right;
 }
 
 #city-search-input {
   padding: 9px;
 }
 
-.city-search-button {
-  background-color: var(--background-color);
+.city-search-button,
+#current-location-button {
+  background-color: rgb(255, 255, 255);
   color: var(--pri-color);
-  border: 2px solid var(--sec-color);
+  border: none;
+  font-size: 22px;
   padding: 8px;
-  margin-left: 3px;
+  margin-left: 2px;
+  margin-right: 5px;
   margin-top: 3px;
 }
 
-#current-location-button {
-  background-color: var(--background-color);
-  color: var(--pri-color);
-  border: 2px solid var(--sec-color);
-  padding: 8px;
-  margin-top: 3px;
-  margin-left: 3px;
+.city-search-button:hover,
+#current-location-button:hover {
+  font-size: 25px;
 }
 
 .CurrentCity {
@@ -51,7 +55,8 @@ input::placeholder {
   border: 2px solid rgba(35, 112, 212, 0.479);
   padding: 15px;
   max-width: 60%;
-  margin-top: 30px;
+  margin-top: 10px;
+  margin-bottom: 30px;
 }
 
 .row {
@@ -101,6 +106,10 @@ input::placeholder {
   margin-bottom: 4px;
 }
 
+#temp-description-h6:first-letter {
+  text-transform: capitalize;
+}
+
 #wind-speed-h6 {
   font-size: 14px;
   margin-bottom: 10px;
@@ -119,6 +128,11 @@ input::placeholder {
 #f {
   font-size: 20px;
   text-decoration: none;
+}
+
+#c:hover,
+#f:hover {
+  font-size: 25px;
 }
 
 #c {
