@@ -11,10 +11,16 @@ function App() {
         <CitySearch />
       </div>
       <footer>
-        <a href="https://github.com/ROBYN13Y/react-weather-app">
+        <a
+          href="https://github.com/ROBYN13Y/react-weather-app"
+          title="GitHub Code"
+        >
           🔗 Open-Sourced Code
         </a>{" "}
-        | <a href="https://www.instagram.com/robyn13y/">Robyn Young 👩‍💻 </a>
+        |{" "}
+        <a href="https://www.instagram.com/robyn13y/" title="IG">
+          Robyn Young 👩‍💻{" "}
+        </a>
       </footer>
     </div>
   );
