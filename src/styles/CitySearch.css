@@ -16,7 +16,7 @@
   background-color: var(--background-color);
   color: var(--pri-color);
   outline: none;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
 }
 
 .city-search-box:active {
@@ -47,99 +47,4 @@ input:placeholder {
 .city-search-button:hover,
 #current-location-button:hover {
   font-size: 25px;
-}
-
-.CurrentCity {
-  display: block;
-  margin: auto;
-  border: 2px solid rgba(35, 112, 212, 0.479);
-  padding: 15px;
-  max-width: 60%;
-  margin-top: 10px;
-  margin-bottom: 30px;
-}
-
-.row {
-  display: flex;
-}
-
-#col-text {
-  width: 70%;
-  text-align: left;
-  padding-left: 5px;
-}
-
-#input-city-h2,
-#temp-description-h6,
-#wind-speed-h6,
-#city-temp-text,
-#c {
-  color: var(--pri-color);
-  margin: 0;
-}
-
-#current-day-time-h5,
-#month-day-year-h6,
-#f {
-  margin: 0;
-  color: var(--tri-color);
-}
-
-#input-city-h2 {
-  margin-top: 3px;
-  margin-bottom: 15px;
-  font-size: 40px;
-}
-
-#current-day-time-h5 {
-  margin-bottom: 4px;
-  font-size: 16px;
-}
-
-#month-day-year-h6 {
-  font-size: 12px;
-  margin-bottom: 10px;
-}
-
-#temp-description-h6 {
-  font-size: 20px;
-  margin-bottom: 4px;
-}
-
-#temp-description-h6:first-letter {
-  text-transform: capitalize;
-}
-
-#wind-speed-h6 {
-  font-size: 14px;
-  margin-bottom: 10px;
-}
-
-#col-emoji {
-  width: 30%;
-  text-align: center;
-}
-
-#city-temp-text {
-  font-size: 40px;
-}
-
-#c,
-#f {
-  font-size: 20px;
-  text-decoration: none;
-  border: none;
-  background-color: rgb(255, 255, 255);
-}
-
-#c:hover,
-#f:hover {
-  font-size: 25px;
-}
-
-#c,
-#f {
-  position: relative;
-  top: -20px;
-  padding: 3px;
 }

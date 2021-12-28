@@ -1,0 +1,102 @@
+.CurrentCity {
+  display: block;
+  margin: auto;
+  border: 2px solid rgba(35, 112, 212, 0.479);
+  padding: 15px;
+  max-width: 60%;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+.row {
+  display: flex;
+}
+
+#col-text {
+  width: 70%;
+  text-align: left;
+  padding-left: 5px;
+}
+
+#input-city-h2,
+#temp-description-h6,
+#wind-speed-h6,
+#city-temp-text,
+#c,
+#current-day-time-h5 {
+  color: var(--pri-color);
+  margin: 0;
+}
+
+#month-day-year-h6,
+#f {
+  margin: 0;
+  color: var(--tri-color);
+}
+
+#input-city-h2 {
+  margin-top: 3px;
+  font-size: 40px;
+}
+
+#current-day-time-h5 {
+  margin-bottom: 18px;
+  font-size: 16px;
+  padding-left: 5px;
+}
+
+#month-day-year-h6 {
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+#temp-description-h6 {
+  font-size: 20px;
+  margin-bottom: 4px;
+  padding-left: 5px;
+}
+
+#temp-description-h6:first-letter {
+  text-transform: capitalize;
+}
+
+#wind-speed-h6 {
+  font-size: 14px;
+  margin-bottom: 10px;
+  padding-left: 5px;
+}
+
+#col-emoji {
+  width: 30%;
+  text-align: center;
+}
+
+.temp-unit {
+  font-size: 18px;
+  position: relative;
+  top: -20px;
+}
+
+#city-temp-text {
+  font-size: 40px;
+}
+
+#c,
+#f {
+  font-size: 20px;
+  text-decoration: none;
+  border: none;
+  background-color: rgb(255, 255, 255);
+}
+
+#c:hover,
+#f:hover {
+  font-size: 25px;
+}
+
+#c,
+#f {
+  position: relative;
+  top: -20px;
+  padding: 3px;
+}

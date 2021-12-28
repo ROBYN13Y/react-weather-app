@@ -3,28 +3,42 @@ import axios from "axios";
 
 import "./styles/CitySearch.css";
 
-export default function CitySearch() {
-  let [city, setCity] = useState("");
-  let [result, setResult] = useState(false);
-  let [weather, setWeather] = useState({});
+import WeatherInfo from "./WeatherInfo";
+import WeatherForecast from "./WeatherForecast";
+
+export default function CitySearch(props) {
+  const [weatherData, setWeatherData] = useState({ ready: false });
+  const [city, setCity] = useState("");
 
   let form = (
     <div className="CitySearch">
       <form id="city-search-form" onSubmit={citySubmit}>
         <label for="city-search-input" className="form-label" id="main-label">
-          <span className="title-emoji">🌈</span> WHAT IS THE WEATHER?
+          <span className="title-emoji">🌈</span>
+          WHAT IS THE WEATHER?
         </label>
         <br />
         <input
-          type="text"
+          type="search"
           className="city-search-box"
           placeholder="TYPE CITY HERE"
+          title="Type a city for me to search!"
           size="34"
           id="city-search-input"
           onChange={searchCity}
         />
-        <input type="submit" className="city-search-button" value="🔍" />
-        <input type="button" id="current-location-button" value="📍" />
+        <input
+          type="submit"
+          className="city-search-button"
+          value="🔍"
+          title="Search"
+        />
+        <input
+          type="submit"
+          id="current-location-button"
+          value="📍"
+          title="Your Location"
+        />
       </form>
     </div>
   );
@@ -37,13 +51,15 @@ export default function CitySearch() {
   }
 
   function showWeather(response) {
-    setResult(true);
-    setWeather({
-      name: response.data.name,
-      temp: Math.round(response.data.main.temp),
+    setWeatherData({
+      ready: true,
+      coordinates: response.data.coord,
+      temperature: Math.round(response.data.main.temp),
+      date: new Date(response.data.dt * 1000),
       description: response.data.weather[0].description,
+      icon: response.data.weather[0].icon,
       wind: response.data.wind.speed,
-      icon: `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`,
+      city: response.data.name,
     });
   }
 
@@ -52,34 +68,12 @@ export default function CitySearch() {
     setCity(event.target.value);
   }
 
-  if (result) {
+  if (weatherData.ready) {
     return (
       <div>
         {form}
-        <div className="CurrentCity">
-          <div className="row">
-            <div className="col" id="col-text">
-              <h2 id="input-city-h2">{weather.name}</h2>
-              <h5 id="current-day-time-h5">Day of the Week, Time (hrs:mins)</h5>
-              <h6 id="month-day-year-h6">Month Day, Year</h6>
-              <h6 id="temp-description-h6">{weather.description} </h6>
-              <h6 id="wind-speed-h6">{weather.wind} (km/hr)</h6>
-            </div>
-            <div className="col" id="col-emoji">
-              <img
-                src={weather.icon}
-                alt="Current City Weather Icon"
-                width="110"
-                id="today-weather-icon"
-              />
-              <h6 id="city-temp-text">
-                {weather.temp}
-                <button id="c">°C</button>
-                <button id="f">°F</button>
-              </h6>
-            </div>
-          </div>
-        </div>
+        <WeatherInfo data={weatherData} />
+        <WeatherForecast coordinates={weatherData.coordinates} />
       </div>
     );
   } else {

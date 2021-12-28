@@ -1,0 +1,36 @@
+.weather-forecast {
+  border: 2px solid rgba(35, 112, 212, 0.479);
+  margin: 0 18px;
+}
+
+.weather-forecast .WeatherForecastPreview {
+  display: block;
+  margin: 18px 10px;
+  padding: 8px;
+  border: 1px solid rgba(35, 112, 212, 0.274);
+}
+
+.weather-forecast .WeatherForecastPreview:hover {
+  padding: 10px;
+}
+
+.forecast-date {
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: var(--pri-color);
+  font-weight: bold;
+}
+
+.forecast-temp {
+  font-style: normal;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #f65282;
+  font-weight: bold;
+}
+
+.forecast-min-temp {
+  margin-left: 10px;
+  opacity: 0.6;
+}
