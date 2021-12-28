@@ -22,23 +22,6 @@ export default function FormattedDate(props) {
     minutes = `0${minutes}`;
   }
 
-  let months = [
-    "January",
-    "February",
-    "March",
-    "April",
-    "May",
-    "June",
-    "July",
-    "August",
-    "September",
-    "November",
-    "December",
-  ];
-  let month = months[props.date.getMonth()];
-
-  let year = props.date.getYear();
-
   return (
     <div>
       <h5 id="current-day-time-h5">
