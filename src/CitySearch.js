@@ -33,12 +33,12 @@ export default function CitySearch(props) {
           value="🔍"
           title="Search"
         />
-        <input
+        {/* <input
           type="submit"
           id="current-location-button"
           value="📍"
           title="Your Location"
-        />
+        /> */}
       </form>
     </div>
   );

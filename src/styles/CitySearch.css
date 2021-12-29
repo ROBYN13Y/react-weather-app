@@ -32,8 +32,7 @@ input:placeholder {
   padding: 9px;
 }
 
-.city-search-button,
-#current-location-button {
+.city-search-button {
   background-color: rgb(255, 255, 255);
   color: var(--pri-color);
   border: none;
@@ -44,7 +43,6 @@ input:placeholder {
   margin-top: 3px;
 }
 
-.city-search-button:hover,
-#current-location-button:hover {
+.city-search-button:hover {
   font-size: 25px;
 }
